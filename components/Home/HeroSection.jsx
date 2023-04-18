@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <div className="relative h-[100vh] lg:h-[80vh]">
+    <div className="relative h-[90vh] lg:h-[80vh]">
       <div className="absolute inset-0 h-full  overflow-hidden">
         <img
           className="h-full object-cover w-full opacity-75"
@@ -13,8 +13,8 @@ const HeroSection = () => {
         <h1 className="text-white text-5xl font-bold text-center">
           Clothing a brighter future
         </h1>
-        <button class="rounded-full bg-blue-500 px-5 py-3 text-base mb-3 font-medium text-white transition duration-200 hover:bg-blue-600 active:bg-blue-700 mt-10">
-          Join Us To Donate
+        <button className="rounded-xl border-2 border-blue-300 px-5 py-3 text-base mb-3 font-medium text-white transition duration-200 hover:bg-red-600/5 active:bg-red-700/5 my-10">
+          Join Us To Make A Change
         </button>
       </div>
     </div>
