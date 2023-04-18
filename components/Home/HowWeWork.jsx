@@ -4,9 +4,10 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-const WhatToExpect = () => {
+const HowWeWork = () => {
   return (
     <div className="bg-slate-300">
+      <h2>How We Work</h2>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -55,4 +56,4 @@ const WhatToExpect = () => {
   );
 };
 
-export default WhatToExpect;
+export default HowWeWork;

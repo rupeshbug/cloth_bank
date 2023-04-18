@@ -1,11 +1,11 @@
 import HeroSection from "../components/Home/HeroSection";
-import WhatToExpect from '../components/Home/WhatToExpect';
+import HowWeWork from "../components/Home/HowWeWork";
 
 const index = () => {
   return (
     <div>
       <HeroSection />
-      <WhatToExpect />
+      <HowWeWork />
     </div>
   );
 };
