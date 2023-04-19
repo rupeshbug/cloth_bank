@@ -7,15 +7,20 @@ import { RiNumber1, RiNumber2, RiNumber3 } from "react-icons/ri";
 
 const HowWeWork = () => {
   return (
-    <div className="bg-slate-300 pt-10 pb-10">
-      <h1 className="ml-10 text-xl mb-3">
+    <div className="bg-slate-100 pt-10 pb-10">
+      <h1 className="text-center text-3xl font-extrabold mb-8 tracking-wider font-serif">
         Change a life with just a few clicks. Donate your clothes today.
       </h1>
-      <h2 className="ml-10 text-lg">How We Work</h2>
+      <h2 className="ml-10 mb-8 text-xl text-center">
+        How We Work
+      </h2>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          iconStyle={{
+            background: "#68D391",
+            color: "#fff",
+          }}
           icon={<RiNumber1 />}
         >
           <h2 className="vertical-timeline-element-title">Connect with us</h2>
@@ -23,7 +28,7 @@ const HowWeWork = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          iconStyle={{ background: "#68D391", color: "#fff" }}
           icon={<RiNumber2 />}
         >
           <h2 className="vertical-timeline-element-title">Give your details</h2>
@@ -33,7 +38,7 @@ const HowWeWork = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          iconStyle={{ background: "#68D391", color: "#fff" }}
           icon={<RiNumber3 />}
         >
           <h2 className="vertical-timeline-element-title">Make a difference</h2>

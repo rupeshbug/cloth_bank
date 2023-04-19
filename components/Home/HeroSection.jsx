@@ -10,10 +10,10 @@ const HeroSection = () => {
       </div>
       <div className="absolute inset-0 bg-gray-800 opacity-75"></div>
       <div className="absolute inset-0 flex justify-center items-center flex-col">
-        <h1 className="text-white text-5xl font-bold text-center">
+        <h1 className="text-center text-white text-5xl font-extrabold mb-8 tracking-wider font-serif">
           Clothing a brighter future
         </h1>
-        <button className="rounded-xl border-2 border-blue-300 px-5 py-3 text-base mb-3 font-medium text-white transition duration-200 hover:bg-red-600/5 active:bg-red-700/5 my-10">
+        <button className="rounded-xl border-2 border-green-400 px-5 py-3 text-base mb-3 font-medium text-white transition duration-200 hover:bg-red-600/5 active:bg-red-700/5 my-10">
           Join Us To Make A Change
         </button>
       </div>
