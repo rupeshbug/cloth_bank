@@ -11,15 +11,13 @@ const HowWeWork = () => {
       <h1 className="text-center text-3xl font-extrabold mb-8 tracking-wider font-serif">
         Change a life with just a few clicks. Donate your clothes today.
       </h1>
-      <h2 className="ml-10 mb-8 text-xl text-center">
-        How We Work
-      </h2>
+      <h2 className="ml-10 mb-8 text-xl text-center">How We Work</h2>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           iconStyle={{
             background: "#68D391",
-            color: "#fff",
+            color: "#fff"
           }}
           icon={<RiNumber1 />}
         >
