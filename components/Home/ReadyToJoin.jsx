@@ -9,7 +9,7 @@ const ReadyToJoin = () => {
           support social causes.
         </h1>
         <Link href="/contact">
-          <button className="rounded-xl border-2 text-xl border-green-400 px-5 py-3 text-base lg:mb-0 lg:mr-5 font-medium transition duration-200 hover:bg-red-600/5 active:bg-red-700/5 my-10 block mx-auto lg:inline-block">
+          <button className="rounded-xl border-2 text-xl border-green-400 px-5 py-3  lg:mb-0 lg:mr-5 font-medium transition duration-200 hover:bg-red-600/5 active:bg-red-700/5 my-10 block mx-auto lg:inline-block">
             Help Someone Stay Warm
           </button>
         </Link>
