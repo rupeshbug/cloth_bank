@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const ReadyToJoin = () => {
   return (
     <div className="py-6 px-4 lg:flex lg:items-center lg:justify-center">
@@ -6,9 +8,11 @@ const ReadyToJoin = () => {
           Ready to join us? Be a part of the solution. Donate clothes and
           support social causes.
         </h1>
-        <button className="rounded-xl border-2 text-xl border-green-400 px-5 py-3 text-base lg:mb-0 lg:mr-5 font-medium transition duration-200 hover:bg-red-600/5 active:bg-red-700/5 my-10 block mx-auto lg:inline-block">
-          Contact Us
-        </button>
+        <Link href="/contact">
+          <button className="rounded-xl border-2 text-xl border-green-400 px-5 py-3 text-base lg:mb-0 lg:mr-5 font-medium transition duration-200 hover:bg-red-600/5 active:bg-red-700/5 my-10 block mx-auto lg:inline-block">
+            Help Someone Stay Warm
+          </button>
+        </Link>
       </div>
       <div className="lg:w-2/5">
         <img

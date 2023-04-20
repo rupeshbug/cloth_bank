@@ -2,11 +2,14 @@ import React from "react";
 
 const contact = () => {
   return (
-    <div className="py-8 px-8 m-auto">
+    <div
+      className="py-8 px-8 m-auto"
+      style={{ backgroundImage: "url('./subtle-prism.png')" }}
+    >
       <h1 className="text-center px-2 text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold mb-8 tracking-wider font-serif">
         Contact Us
       </h1>
-      <form className="w-full lg:w-2/4  shadow-xl m-auto py-4 px-5 rounded-md">
+      <form className="w-full lg:w-2/4  shadow-2xl m-auto py-4 px-5 rounded-md">
         <div className="relative z-0 w-full mb-6 group">
           <input
             type="email"
