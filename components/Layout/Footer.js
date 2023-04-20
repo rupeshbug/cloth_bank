@@ -1,34 +1,3 @@
-// import { FaFacebook, FaInstagram } from "react-icons/fa";
-// import Link from "next/link";
-
-// const Footer = () => {
-//   return (
-//     <footer>
-//       <div>
-//         <img src="/img5.png" alt="logo" />
-//       </div>
-//       <div>
-//         <p>About Us</p>
-//         <p>Contact</p>
-//       </div>
-//       <div>
-//         <Link href="https://www.facebook.com/">
-//           <span>
-//             <FaFacebook />
-//           </span>
-//         </Link>
-//         <Link href="https://www.instagram.com/">
-//           <span>
-//             <FaInstagram />
-//           </span>
-//         </Link>
-//       </div>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
-
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 
