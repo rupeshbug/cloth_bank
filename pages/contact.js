@@ -1,6 +1,49 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 
-const contact = () => {
+const Contact = () => {
+  const formRef = useRef(null);
+  const [email, setEmail] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [weight, setWeight] = useState("");
+  const [submitStatus, setSubmitStatus] = useState(null);
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const body = { email, firstName, lastName, phone, weight };
+    try {
+      const response = await fetch("api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      const data = await response.json();
+      if (response.status !== 200) {
+        setSubmitStatus("error");
+        setErrorMessage("Error submitting the form!");
+      } else {
+        resetForm();
+        setSubmitStatus("success");
+      }
+    } catch (error) {
+      setSubmitStatus("error");
+      setErrorMessage("Error submitting the form");
+    }
+  };
+
+  const resetForm = () => {
+    setEmail("");
+    setFirstName("");
+    setLastName("");
+    setPhone("");
+    setWeight("");
+    if (formRef.current) {
+      formRef.current.reset();
+    }
+  };
+
   return (
     <div
       className="py-8 px-8 m-auto"
@@ -9,9 +52,14 @@ const contact = () => {
       <h1 className="text-center px-2 text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold mb-8 tracking-wider font-serif">
         Contact Us
       </h1>
-      <form className="w-full lg:w-2/5  shadow-2xl m-auto py-4 px-5 rounded-md">
+      <form
+        ref={formRef}
+        className="w-full lg:w-2/5  shadow-2xl m-auto py-4 px-5 rounded-md"
+        onSubmit={handleSubmit}
+      >
         <div className="relative z-0 w-full mb-6 group">
           <input
+            onChange={(e) => setEmail(e.target.value)}
             type="email"
             name="floating_email"
             id="floating_email"
@@ -30,6 +78,7 @@ const contact = () => {
         <div className="grid md:grid-cols-2 md:gap-6">
           <div className="relative z-0 w-full mb-6 group">
             <input
+              onChange={(e) => setFirstName(e.target.value)}
               type="text"
               name="floating_first_name"
               id="floating_first_name"
@@ -40,13 +89,14 @@ const contact = () => {
             />
             <label
               htmlFor="floating_first_name"
-              className="peer-focus:font-medium absolute text-sm text-slate-600 dark:text-gray-400 duration-300 transhtmlForm -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-green-600 peer-focus:text-slate-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              className="peer-focus:font-medium absolute text-sm text-slate-600 dark:text-gray-400 duration-300 transhtmlForm -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-slate-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               First name
             </label>
           </div>
           <div className="relative z-0 w-full mb-6 group">
             <input
+              onChange={(e) => setLastName(e.target.value)}
               type="text"
               name="floating_last_name"
               id="floating_last_name"
@@ -66,6 +116,7 @@ const contact = () => {
         <div className="grid md:grid-cols-2 md:gap-6">
           <div className="relative z-0 w-full mb-6 group">
             <input
+              onChange={(e) => setPhone(e.target.value)}
               type="tel"
               name="floating_phone"
               id="floating_phone"
@@ -83,6 +134,7 @@ const contact = () => {
           </div>
           <div className="relative z-0 w-full mb-6 group">
             <input
+              onChange={(e) => setWeight(e.target.value)}
               type="number"
               name="floating_weight"
               id="floating_weight"
@@ -107,9 +159,17 @@ const contact = () => {
             Submit
           </button>
         </div>
+        {submitStatus === "success" && (
+          <p className="text-xl text-teal-900 text-center my-4">
+            Your form is submitted. The team will contact you soon.
+          </p>
+        )}
+        {submitStatus === "error" && (
+          <p className="text-red-500 text-center my-4">{errorMessage}</p>
+        )}
       </form>
     </div>
   );
 };
 
-export default contact;
+export default Contact;

@@ -6,7 +6,12 @@ const Footer = () => {
     <footer className="py-6 px-4 border-t-2 border-gray-300">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-4">
         <div className="max-w-xs">
-          <img src="/img5.png" alt="logo" className="w-16" />
+          <img
+            src="/logo1.jpg"
+            alt="logo"
+            className="w-16"
+            style={{ height: "70px", width: "90px" }}
+          />
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center my-4">
           <Link href="/">
