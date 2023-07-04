@@ -6,28 +6,35 @@ const about = () => {
       <h1 className="text-4xl text-center pb-5 tracking-wider">About Us</h1>
       <div className="text-lg">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Welcome to our website, a dynamic platform born out of a visionary
+          university project for the module Social Innovation Project. We are a
+          team of passionate and dedicated individuals who believe in the power
+          of social change and its ability to transform lives. Our project
+          focuses on addressing the pressing issue of clothing scarcity faced by
+          vulnerable communities. Through our platform, we aim to bridge the gap
+          between those who have excess clothes and those in need, creating a
+          sustainable and impactful solution.
         </p>
         <p className="pt-5">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-          qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-          dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-          quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-          aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-          exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-          ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-          ea voluptate velit esse quam nihil molestiae consequatur, vel illum
-          qui dolorem eum fugiat quo voluptas nulla pariatur.
+          Our vision extends beyond merely collecting and distributing clothes;
+          we strive to create a sense of community and empathy through our
+          project. By encouraging individuals to donate their gently used
+          clothing, we not only provide essential garments to those in need but
+          also foster a spirit of solidarity and compassion. We firmly believe
+          that small acts of kindness can have a significant impact on society
+          as a whole. We understand the importance of convenience and efficiency
+          when it comes to charitable giving, and that's why our platform is
+          designed to streamline the entire donation experience. By leveraging
+          the latest technologies, we ensure that donors can easily connect with
+          us and contribute to this worthy cause with just a few clicks.
+        </p>
+        <p className="pt-5">
+          Join us in our mission to make a lasting impact on society. Together,
+          we can create a world where clothing scarcity is eliminated, and every
+          individual has access to the basic necessity of clothing. Your support
+          and contributions are invaluable in helping us achieve this vision.
+          Thank you for being a part of our journey towards social innovation
+          and positive change!
         </p>
       </div>
     </div>
